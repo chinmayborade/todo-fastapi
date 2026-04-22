@@ -13,7 +13,7 @@ app = FastAPI()
 
 Base.metadata.create_all(bind=engine)
 
-templates = Jinja2Templates(directory="Todo/templates")
+templates = Jinja2Templates(directory="todo/templates")
 
 app.mount("/static",StaticFiles(directory="todo/static"), name = "static")
 
