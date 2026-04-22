@@ -2,9 +2,9 @@ from datetime import datetime, timedelta, timezone
 from fastapi import HTTPException
 from fastapi import APIRouter, Depends ,Request
 from pydantic import BaseModel
-from ..models import Users
+from todo.models import Users
 from passlib.context import CryptContext
-from ..database import SessionLocal
+from todo.database import SessionLocal
 from typing import Annotated
 from sqlalchemy.orm import Session
 from starlette import status
