@@ -13,6 +13,7 @@ from jose import jwt, JWTError
 from fastapi.templating import Jinja2Templates
 
 
+
 router = APIRouter(
     prefix="/auth",
     tags=["auth"],

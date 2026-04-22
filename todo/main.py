@@ -15,7 +15,7 @@ Base.metadata.create_all(bind=engine)
 
 templates = Jinja2Templates(directory="Todo/templates")
 
-app.mount("/static",StaticFiles(directory="Todo/static"), name = "static")
+app.mount("/static",StaticFiles(directory="todo/static"), name = "static")
 
 
 @app.get("/")
